@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<input type = "text" id="firstname" value="Enter first name..."></br>
+<input type = "number" id="age" value="0"></br>
+<input type = "text" id="job" value="Enter job..."></br>
+<button onclick="submit()"> Submit </button>
+<button onclick="increase()">Increase </button>
+<p id="person"></p>
+<script>
+
+i = 0;
+
+function submit(){
+var first = document.getElementById("firstname").value;
+var age = document.getElementById("age").value;
+var job = document.getElementById("job").value;
+document.getElementById("person").innerHTML = "Name : "+first+"</br>"+" Age : "+ age + "</br>" + "Job : " + job;
+}
+
+
+function increase(){
+document.getElementById("age").stepUp();
+}
+
+
+</script>
+
+</body>
+</html> 

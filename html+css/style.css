@@ -1,0 +1,53 @@
+/*@CHARSET "ISO-8859-1";*/
+
+body{
+background-color: pink;
+
+width: 90%;
+margin-left:auto;
+margin-right:auto;
+
+}
+
+#header{
+	background-color:pink;
+	width: 100%;
+	height: 50px;
+}
+
+
+#navigation a:visited{
+	color:yellow;
+}
+
+#navigation{
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+
+#navigation ul {
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+text-decoration:none;
+}
+
+#navigation li{
+	background-color: black;
+	color: white;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+	width:30%;
+}
+#profile {
+padding: 0px 0px 0px 0px;
+margin-left:auto;
+margin-right:auto;
+}
+
+
+
+
+

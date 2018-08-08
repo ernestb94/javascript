@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type = "text" id="firstname" value="Enter first name..."></br>
+<input type = "number" id="age" value="Enter age..."></br>
+<input type = "text" id="job" value="Enter job..."></br>
+<button onclick="submit()"> Submit </button>
+<p id="person"></p>
+
+<script>
+
+
+
+function submit(){
+var first = document.getElementById("firstname").value;
+var age = document.getElementById("age").value;
+var job = document.getElementById("job").value;
+
+document.getElementById("person").innerHTML = "Name : "+first+"</br>"+" Age : "+ age + "</br>" + "Job : " + job;
+
+</script>
+
+</body>
+</html> 

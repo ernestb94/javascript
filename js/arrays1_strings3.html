@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<script>
+var nbaTeams = ["Warrios", "Raptors", "Thunder" , "Celtics"];
+document.write(nbaTeams);
+
+function addTeam(){
+	nbaTeams.push("76ers");
+	document.write(nbaTeams);
+}
+
+function removeTeam(){
+	nbaTeams.pop();
+	document.write(nbaTeams);
+}
+</script>
+
+</br><button onclick="addTeam()">Add team</button>
+</br><button onclick="removeTeam()">Delete team</button>
+
+</body>
+</html> 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id = "exercise1"> </p>
+
+<input type = "text" id="firstname" value="Enter first name..."></br>
+<input type = "number" id="age" value="Enter age..."></br>
+<input type = "text" id="job" value="Enter job..."></br>
+<button onclick="submit()"> Submit </button>
+<button onclick="increase()">Increase </button>
+<p id="person"></p>
+<script>
+<!-- CREATING SCRIPT -->
+
+<!-- alert("Hello World!"); -->
+
+<!-- VARIABLES -->
+
+<!-- var varString = "Hello World!" -->
+<!-- alert(varString); -->
+<!-- document.write(varString); -->
+<!-- console.log(varString); -->
+
+<!-- FUNCTIONS 1 -->
+
+<!-- function sqFunction(n1) { -->
+	<!-- return n1 * n1; -->
+<!-- } -->
+<!-- var ans = sqFunction (2); -->
+<!-- document.write(ans); -->
+
+<!-- FUNCTIONS 2 -->
+
+<!-- function sumFunction(n1,n2,n3){ -->
+<!-- return n1 + n2 + n3; -->
+<!-- } -->
+<!-- var sum = sumFunction(2, 3 , 5); -->
+<!-- document.write(sum); -->
+
+<!-- VARIABLES 2 -->
+
+function submit(){
+var first = document.getElementById("firstname").value;
+var age = document.getElementById("age").value;
+var job = document.getElementById("job").value;
+
+document.getElementById("person").innerHTML = "Name : "+first+"</br>"+" Age : "+ age + "</br>" + "Job : " + job;
+}
+
+<!-- EVENTS 1 -->
+function increase(){
+var age = document.getElementByID("age").value;
+age++;
+document.getElementById("person").innerHTML = age;
+}
+
+</script>
+
+</body>
+</html> 
