@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<input type = "text" id = "textbox" value ="Check triple..."></br>
+<button onclick="tripleCheck()">Check</button>
+
+<script>
+
+function tripleCheck(str){
+	let triple = document.getElementById("textbox").value;
+    let count = 0;
+for (let i = 0; i < triple.length; i++){
+if (triple [i] == triple[i+ 1] && triple[i+1] == triple [i + 2]){
+count++;
+}
+document.write(count);
+}
+}
+</script>
+</body>
+</html> 
