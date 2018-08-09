@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type = "text" id="paragraph" ></br>
+</br><button onclick="createP()">Create</button>
+</br><button onclick="changeP()">Change</button>
+</br><button onclick="deleteP()">Delete</button>
+
+<script>
+function createP(){
+	let p2 = document.createElement('p');
+    p2.innerHTML ="Hello.";
+    let element = document.getElementById("p1");
+    element.parentNode.insertBefore(p2, element.nextSibling);
+}
+
+function changeP(){
+    document.getElementById("p1").innerHTML = "YOOOO!";
+}
+
+function deleteP(){
+var parent = document.getElementById("parentDiv");
+var child = document.getElementById("p1");
+parent.removeChild(child);
+}
+
+</script>
+<div = id ="parentDiv">
+<p id ="p1"> Greetings!</p>
+<p id ="p3"> Hi! </p>
+
+</body>
+</html> 
